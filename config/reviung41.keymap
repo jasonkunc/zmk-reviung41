@@ -15,9 +15,7 @@
 #define PUNK    3
 #define ADJ     4
 
-&mt {
-    tapping-term-ms = <1500>;
-};
+&mt { tapping-term-ms = <1500>; };
 
 / {
     behaviors {
@@ -61,7 +59,7 @@
             bindings = <
 &kp TAB                    &kp Q               &kp W       &kp E       &kp R     &kp T             &kp Y  &kp U     &kp I       &kp O       &kp P           &kp BSPC
 &mt LG(LS(LA(LCTRL))) ESC  &mt LEFT_CONTROL A  &mt LALT S  &mt LGUI D  &kp F     &kp G             &kp H  &kp J     &mt RGUI K  &mt RALT L  &mt RCTRL SEMI  &kp SQT
-&kp LSHFT                  &kp Z               &kp X       &kp C       &kp V     &kp B             &kp N  &kp M     &kp COMMA   &kp DOT     &kp FSLH        &mt RSHFT RET
+&kp LSHFT                  &kp Z               &kp X       &kp C       &kp V     &kp B             &kp N  &kp M     &kp COMMA   &kp DOT     &kp FSLH        &kp RETURN
                                                            &kp LGUI    &mo NAVI         &kp SPACE         &mo PUNK  &mo ADJ
             >;
         };
@@ -76,7 +74,7 @@
             bindings = <
 &kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT         &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR   &kp RPAR   &kp UNDERSCORE
 &none      &none     &none   &none     &mo NUMB  &mo PUNK          &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none      &none
-&kp LSHFT  &none     &none   &none     &none     &none             &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp PSCRN  &mt RSHFT RET
+&kp LSHFT  &none     &none   &none     &none     &none             &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp PSCRN  &none
                              &none     &mo NAVI             &none             &mo PUNK   &none
             >;
         };
